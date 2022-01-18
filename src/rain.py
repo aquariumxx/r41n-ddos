@@ -87,7 +87,7 @@ def buildblock(size):
 
 def usage():
     print ('---------------------------------------------------')
-    print ('USAGE: python ihulk.py <url>')
+    print ('USAGE: python rain.py <url>')
     print ('you can add "safe" after url, to autoshut after dos')
     print ('---------------------------------------------------')
 
@@ -143,7 +143,7 @@ class MonitorThread(threading.Thread):
                 print("%d Requests Sent" % (request_counter))
                 previous = request_counter + 100
         if flag == 2:
-            print("\n-- DOS Attack Finished --")
+            print("\n-- r41n DOS Attack Finished --")
 
 
 # execute
@@ -151,7 +151,7 @@ if len(sys.argv) < 2 or sys.argv[1] == "help":
     usage()
     sys.exit()
 else:
-    print("-- DOS Attack Started --")
+    print("-- r41n DOS Attack Started --")
     if len(sys.argv) == 3:
         if sys.argv[2] == "safe":
             set_safe()
